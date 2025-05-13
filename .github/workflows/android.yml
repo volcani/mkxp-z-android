@@ -19,6 +19,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: install things
+        run : 
+        sudo apt-get update
+        sudo apt-get libopenal-dev
+        
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
