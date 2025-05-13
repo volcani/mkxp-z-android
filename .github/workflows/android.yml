@@ -20,7 +20,7 @@ jobs:
         with:
           java-version: 11
       - name: install things
-        run : 
+        run : |
         sudo apt-get update
         sudo apt-get libopenal-dev
         
