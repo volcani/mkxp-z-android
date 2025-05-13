@@ -19,10 +19,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: install things
-        run : |
-        sudo apt-get update
-        sudo apt-get libopenal-dev
+      - name: Install jq tool
+        run: |
+          sudo apt-get update
+          sudo apt-get install libopenal-dev
         
       - name: Make gradlew executable
         run: chmod +x ./gradlew
